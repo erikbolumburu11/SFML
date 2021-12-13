@@ -119,8 +119,7 @@ public:
     /// This function is a shortcut for the following code:
     /// \code
     /// sf::Image image;
-    /// image.loadFromFile(filename);
-    /// texture.loadFromImage(image, area);
+    /// image.loadFromFile(filename) && texture.loadFromImage(image, area)
     /// \endcode
     ///
     /// The \a area argument can be used to load only a sub-rectangle
@@ -150,8 +149,7 @@ public:
     /// This function is a shortcut for the following code:
     /// \code
     /// sf::Image image;
-    /// image.loadFromMemory(data, size);
-    /// texture.loadFromImage(image, area);
+    /// image.loadFromMemory(data, size) && texture.loadFromImage(image, area)
     /// \endcode
     ///
     /// The \a area argument can be used to load only a sub-rectangle
@@ -182,8 +180,7 @@ public:
     /// This function is a shortcut for the following code:
     /// \code
     /// sf::Image image;
-    /// image.loadFromStream(stream);
-    /// texture.loadFromImage(image, area);
+    /// image.loadFromStream(stream) && texture.loadFromImage(image, area)
     /// \endcode
     ///
     /// The \a area argument can be used to load only a sub-rectangle
